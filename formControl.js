@@ -1,5 +1,4 @@
 
-
 export default class formControl1 {
   constructor(num1, email) {
     this.num1 = num1;
@@ -32,7 +31,7 @@ export default class formControl1 {
   }
 
   isValidEmail(email) {
-    const regex = /^[^s@]+@[^s@]+.[^s@]{2,}$/;
+    const regex =/^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$/i
     console.log(email);
     return regex.test(email);
   }
